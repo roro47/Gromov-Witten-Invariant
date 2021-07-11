@@ -3,6 +3,7 @@ import unittest
 
 
 # CP^2 recursion formula
+# compute the number of rational curves of degree d in CP2 passing through 3d - 1 generic points
 def cp2_recursion(d):
     if d <= 0:
         return 0
