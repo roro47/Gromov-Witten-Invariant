@@ -13,7 +13,7 @@ def phi_cpn(n):
     for i in range(0, n): # todo: too long range
         if (2*i <= n) and (n != 3*i):
             expr += Pow(t[i],2)*t[n-2*i]/2
-    
+     
     if n % 3 == 0:
         expr += Pow(t[n/3], 3)
 
@@ -23,6 +23,9 @@ def phi_cpn(n):
 print(phi_cpn(2))
 
 
+
+
+
 def gw_potential(n):
     if n == 1:
         s, t0, t1 = symbols('s t0 t1')
@@ -30,6 +33,23 @@ def gw_potential(n):
         return potential
     elif n >= 2:
         expr = phi_cpn(n)
+        t = symbols('t0:%d'%(n+1))
+        k = symbols('k0:%d'%(n+1))
+        d = symbols('d')
+        s = symbols('s')
+
+        term  = 1
+        for i in range(2, n+1):
+            term  *= Pow(t[i], k[i])/factorial(k[i])
+
+        term = term * exp(d*t[1]) * Pow(s, d)
+
+        acc
+        for i in range(2, n+1):
+            acc += 
+            
+        
+        series = Sum(inner_series, (d, 1, oo))
         
 
         return 0 
