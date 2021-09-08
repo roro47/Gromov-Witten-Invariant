@@ -7,3 +7,7 @@ To calculate Gromov-Witten Invariant
 │   ├── ogw_exp.ipynb - contains code for computing open gromov-witten invariant of projective space
 ├── experiment
 ```
+
+TODO: 
+1. remove nonsense comment
+2. update README for most up to date file structure
